@@ -1,0 +1,26 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-rows: 0.5fr 1fr 0.2fr;
+  gap: 1px 1px;
+  grid-template-areas: ". logo ." ". auth_options ." ". footer .";
+}
+
+.logo { 
+	grid-area: logo; 
+	margin: auto;
+}
+
+.auth_options { 
+	grid-area: auth_options; 
+	margin: auto;
+}
+
+.footer { 
+	grid-area: footer;
+}
+.logout {
+	position: fixed;
+	margin-top: 0px;
+	margin-left: 0px;
+}
